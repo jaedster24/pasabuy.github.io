@@ -1,0 +1,467 @@
+<?php 
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+
+ ?>
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--SWIPER CAROUSEL CSS PLUGIN-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <title>PASABUY</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+                <img class="header__img">
+
+                <img src="images/logo.png" height="100px" width="100px">
+    
+
+    
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="#" class="nav__link nav__logo">
+                        <i class='bx bx-menu-alt-left nav__icon' ></i>
+                        <span class="nav__logo-name">PasaBuy</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Menu</h3>
+    
+                            <a href="#" class="nav__link active">
+                                <i class='bx bx-home nav__icon' ></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon' ></i>
+                                <span class="nav__name">Profile</span>
+                            </a>
+
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-building-house nav__icon' ></i>
+                                <span class="nav__name">Pasabuy FastFood</span>
+                            </a>
+
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-capsule nav__icon' ></i>
+                                <span class="nav__name">Pasabuy Medicine</span>
+                            </a>
+
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-basket nav__icon' ></i>
+                                <span class="nav__name">Pasabuy Grocery</span>
+                            </a>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link nav__logout">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <!-----Product Carousel -->
+
+ <h1 class="title-shop">Jollibee</h1>
+ <h2 class="MealCat">Chickenjoy</h2>
+<div class="swiper-container swiper1" id="ProductSlides">
+<div class="swiper-wrapper">
+
+<div class="swiper-slide">
+<article class="card">
+   <div class="card__img">
+       <img src="images/palabok.png" alt="1.png">
+   </div>
+   <div class="card__name">
+       <p>1-pc Chickenjoy w/ Drink</p>
+   </div>
+   <div class="card__precis">
+       <div>
+           <span class="card__preci card__preci--now">Php105</span>
+       </div>
+   </div>
+</article>
+</div>
+
+<div class="swiper-slide">
+<article class="card">
+   <div class="card__img">
+       <img src="images/peach.png" alt="1.png">
+   </div>
+   <div class="card__name">
+       <p>2-pc Chickenjoy w/ Drink</p>
+   </div>
+   <div class="card__precis"> 
+       <div>
+           <span class="card__preci card__preci--now">Php187</span>
+       </div> 
+   </div>
+</article>
+</div>
+
+<div class="swiper-slide">
+<article class="card">
+    <div class="card__img">
+        <img src="images/fries.png" alt="1.png">
+    </div>
+    <div class="card__name">
+        <p>1-pc Chickenjoy + Spaghetti w/ Drink</p>
+    </div>
+    <div class="card__precis"> 
+        <div> 
+            <span class="card__preci card__preci--now">Php138</span>
+        </div>
+    </div>
+</article>
+</div>
+
+<div class="swiper-slide">
+<article class="card">
+    <div class="card__img">
+        <img src="images/combo.png" alt="1.png">
+    </div>
+    <div class="card__name">
+        <p>1-pc Chickenjoy + Spaghetti w/ Drink</p>
+    </div>
+    <div class="card__precis"> 
+        <div> 
+            <span class="card__preci card__preci--now">Php138</span>
+        </div>
+    </div>
+</article>
+</div>
+
+<div class="swiper-slide">
+<article class="card">
+    <div class="card__img">
+        <img src="images/halo.png" alt="1.png">
+    </div>
+    <div class="card__name">
+        <p>1-pc Chickenjoy + Spaghetti w/ Drink</p>
+    </div>
+    <div class="card__precis"> 
+        <div> 
+            <span class="card__preci card__preci--now">Php138</span>
+        </div>
+    </div>
+</article>
+</div>
+
+<div class="swiper-slide">
+    <article class="card">
+        <div class="card__img">
+            <img src="images/pm2.png" alt="1.png">
+        </div>
+        <div class="card__name">
+            <p>1-pc Chickenjoy + Spaghetti w/ Drink</p>
+        </div>
+        <div class="card__precis"> 
+            <div> 
+                <span class="card__preci card__preci--now">Php138</span>
+            </div>
+        </div>
+    </article>
+</div>
+
+<div class="swiper-slide">
+        <article class="card">
+            <div class="card__img">
+                <img src="images/choco.png" alt="1.png">
+            </div>
+            <div class="card__name">
+                <p>1-pc Chickenjoy + Spaghetti w/ Drink</p>
+            </div>
+            <div class="card__precis"> 
+                <div> 
+                    <span class="card__preci card__preci--now">Php138</span>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="swiper-slide">
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/fries.png" alt="1.png">
+                </div>
+                <div class="card__name">
+                    <p>1-pc Chickenjoy + Spaghetti w/ Drink</p>
+                </div>
+                <div class="card__precis"> 
+                    <div> 
+                        <span class="card__preci card__preci--now">Php138</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination1"></div>
+
+</div>
+</div>
+
+<!-------------->
+<!-----Product Carousel -->
+
+<h1 class="title-shop">MCDO</h1>
+<h2 class="MealCat">Chickenjoy</h2>
+<div class="swiper-container swiper2" id="ProductSlides">
+<div class="swiper-wrapper">
+
+<div class="swiper-slide swap">
+<article class="card">
+  <div class="card__img">
+      <img src="images/palabok.png" alt="1.png">
+  </div>
+  <div class="card__name">
+      <p>1-pc Chickenjoy w/ Drink</p>
+  </div>
+  <div class="card__precis">
+      <div>
+          <span class="card__preci card__preci--now">Php105</span>
+      </div>
+  </div>
+</article>
+</div>
+
+<div class="swiper-slide swap">
+<article class="card">
+  <div class="card__img">
+      <img src="images/peach.png" alt="1.png">
+  </div>
+  <div class="card__name">
+      <p>2-pc Chickenjoy w/ Drink</p>
+  </div>
+  <div class="card__precis"> 
+      <div>
+          <span class="card__preci card__preci--now">Php187</span>
+      </div> 
+  </div>
+</article>
+</div>
+
+<div class="swiper-slide swap">
+<article class="card">
+   <div class="card__img">
+       <img src="images/fries.png" alt="1.png">
+   </div>
+   <div class="card__name">
+       <p>1-pc Chickenjoy + Spaghetti w/ Drink</p>
+   </div>
+   <div class="card__precis"> 
+       <div> 
+           <span class="card__preci card__preci--now">Php138</span>
+       </div>
+   </div>
+</article>
+</div>
+
+<div class="swiper-slide swap">
+<article class="card">
+   <div class="card__img">
+       <img src="images/combo.png" alt="1.png">
+   </div>
+   <div class="card__name">
+       <p>1-pc Chickenjoy + Spaghetti w/ Drink</p>
+   </div>
+   <div class="card__precis"> 
+       <div> 
+           <span class="card__preci card__preci--now">Php138</span>
+       </div>
+   </div>
+</article>
+</div>
+
+<div class="swiper-slide swap">
+<article class="card">
+   <div class="card__img">
+       <img src="images/halo.png" alt="1.png">
+   </div>
+   <div class="card__name">
+       <p>1-pc Chickenjoy + Spaghetti w/ Drink</p>
+   </div>
+   <div class="card__precis"> 
+       <div> 
+           <span class="card__preci card__preci--now">Php138</span>
+       </div>
+   </div>
+</article>
+</div>
+
+<div class="swiper-slide swap">
+   <article class="card">
+       <div class="card__img">
+           <img src="images/pm2.png" alt="1.png">
+       </div>
+       <div class="card__name">
+           <p>1-pc Chickenjoy + Spaghetti w/ Drink</p>
+       </div>
+       <div class="card__precis"> 
+           <div> 
+               <span class="card__preci card__preci--now">Php138</span>
+           </div>
+       </div>
+   </article>
+</div>
+
+<div class="swiper-slide swap">
+       <article class="card">
+           <div class="card__img">
+               <img src="images/choco.png" alt="1.png">
+           </div>
+           <div class="card__name">
+               <p>1-pc Chickenjoy + Spaghetti w/ Drink</p>
+           </div>
+           <div class="card__precis"> 
+               <div> 
+                   <span class="card__preci card__preci--now">Php138</span>
+               </div>
+           </div>
+       </article>
+   </div>
+
+   <div class="swiper-slide swap">
+           <article class="card">
+               <div class="card__img">
+                   <img src="images/fries.png" alt="1.png">
+               </div>
+               <div class="card__name">
+                   <p>1-pc Chickenjoy + Spaghetti w/ Drink</p>
+               </div>
+               <div class="card__precis"> 
+                   <div> 
+                       <span class="card__preci card__preci--now">Php138</span>
+                   </div>
+               </div>
+           </article>
+       </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination2"></div>
+</div>
+</div>
+
+<!--ORDER MODAL-->
+<button class="btn" name="" id="PlaceOrder" href="">
+    <i class='bx bxs-pencil'><span>Place Order</span></i>
+    </button>
+    <form action="orderdb.php" method="POST">
+          <div id="OrderModal" class="Modal">
+
+            <!-- Modal Window -->
+        
+           <div class="ModalWindow">
+                 <span class="close">&minus;</span>
+                 
+                    <h1 id="">Input Order</h1>
+                   
+                    <textarea id="OrderArea" name="orderkuninmo" placeholder="Type Order Here &#10Example&#10 1pc Yumburger &#10 1pc Chickenjoy w/ drink(Coke)" ></textarea>
+                    
+                    <input type="Submit" name="submitorder" id="ConfirmOrder" href="" value="Confirm Order"><br>
+           </div>
+         </div>
+</form>  
+         <script type="text/javascript">
+	
+            var modal = document.getElementById("OrderModal");
+            var btn = document.getElementById("PlaceOrder");
+            var span = document.getElementsByClassName("close")[0];
+            
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+         <!-- Swiper JS -->
+         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper1', {
+      slidesPerView: 5,
+      slidesPerGroup: 5,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: '.swiper-pagination1',
+    });
+    var swiper2 = new Swiper('.swiper2', {
+      slidesPerView: 5,
+      slidesPerGroup: 5,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: '.swiper-pagination2',
+    });
+
+    function myFunction(x){
+      if (x.matches){
+            var swiper = new Swiper('.swiper1',{
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            });
+        }else{
+            var swiper = new Swiper('.swiper1',{
+            slidesPerView: 5,
+            slidesPerGroup: 5,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            });
+        }
+    }
+var x = window.matchMedia("(max-width: 1000px)")
+myFunction(x)
+x.addListener(myFunction)
+  </script>
+
+    </body>
+    
+</html>
+<?php 
+}else{
+     header("Location: index.php");
+     exit();
+}
+ ?>
